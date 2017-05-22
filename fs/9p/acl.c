@@ -282,9 +282,17 @@ static int v9fs_xattr_set_acl(const struct xattr_handler *handler,
 	switch (handler->flags) {
 	case ACL_TYPE_ACCESS:
 		if (acl) {
+<<<<<<< HEAD
 			umode_t mode = inode->i_mode;
 			retval = posix_acl_equiv_mode(acl, &mode);
 			if (retval < 0)
+=======
+			struct iattr iattr;
+			struct posix_acl *old_acl = acl;
+
+			retval = posix_acl_update_mode(inode, &iattr.ia_mode, &acl);
+			if (retval)
+>>>>>>> 7d7269a... Merge commit 'Linux-4.4.69' into TW70-stock
 				goto err_out;
 			else {
 				struct iattr iattr;
@@ -306,7 +314,13 @@ static int v9fs_xattr_set_acl(const struct xattr_handler *handler,
 				 * What is the following setxattr update the
 				 * mode ?
 				 */
+<<<<<<< HEAD
 				v9fs_vfs_setattr_dotl(dentry, &iattr);
+=======
+				posix_acl_release(old_acl);
+				value = NULL;
+				size = 0;
+>>>>>>> 7d7269a... Merge commit 'Linux-4.4.69' into TW70-stock
 			}
 		}
 		break;

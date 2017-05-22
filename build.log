@@ -1,0 +1,577 @@
+
+==============================================
+START : FUNC_BUILD_KERNEL
+==============================================
+
+build common config=exynos8895-dreamlte_eur_open_defconfig 
+build model config=dreamlte 
+rm files in : /home/f/NOTO/NOTO88951/arch/arm64/boot/dts/*.dtb
+rm: cannot remove '/home/f/NOTO/NOTO88951/arch/arm64/boot/dts/*.dtb': No such file or directory
+rm: cannot remove '/home/f/NOTO/NOTO88951/arch/arm64/boot/boot.img-dtb': No such file or directory
+rm: cannot remove '/home/f/NOTO/NOTO88951/arch/arm64/boot/boot.img-zImage': No such file or directory
+boolean symbol SND_SOC_MAX98506 tested for 'm'? test forced to 'n'
+#
+# configuration written to .config
+#
+scripts/kconfig/conf  --silentoldconfig Kconfig
+boolean symbol SND_SOC_MAX98506 tested for 'm'? test forced to 'n'
+INFO: CC is /home/f/NOTO/toolchain/aarch64-linux-android-6.3-master/bin/aarch64-linux-android-gcc
+  CHK     include/config/kernel.release
+  CHK     include/generated/uapi/linux/version.h
+  CHK     include/generated/utsrelease.h
+  CHK     include/generated/timeconst.h
+  CHK     include/generated/bounds.h
+  CHK     include/generated/asm-offsets.h
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      drivers/gud/gud-exynos8895_kinibi400/TlcTui/platforms/exynos8895/tui-hal.o
+  LD      drivers/gud/gud-exynos8895_kinibi400/TlcTui/TlcTui.o
+  LD      drivers/gud/gud-exynos8895_kinibi400/TlcTui/built-in.o
+  LD      drivers/gud/gud-exynos8895_kinibi400/built-in.o
+  LD      drivers/gud/built-in.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-device-preprocessor.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-device-csi_v3.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-video-preprocessor.o
+drivers/net/wireless/bcmdhd4361/Makefile:290: Not found Android version file. Set None
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-core.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-spi.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-i2c.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-debug.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-mem.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-pipe.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-framemgr.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-groupmgr.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-resourcemgr.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-devicemgr.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-video.o
+  CC      drivers/sensorhub/brcm/hrmsensor.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-video-sensor.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-video-3aa.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-video-3aac.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-video-3aap.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-video-isp.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-video-ispc.o
+  LD      drivers/sensorhub/brcm/built-in.o
+  LD      drivers/sensorhub/built-in.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-video-ispp.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-video-dis.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-video-disc.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-video-scc.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-video-scp.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-video-mcs.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-video-mcsp.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-video-vra.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-video-ssvc0.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-video-ssvc1.o
+  CC      drivers/video/fbdev/exynos/dpu/dpp_drv.o
+  CC      drivers/video/fbdev/exynos/dpu/dsim_drv.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-video-ssvc2.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-video-ssvc3.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-subdev-ctrl.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-device-flite.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-device-ischain.o
+  CC      drivers/video/fbdev/exynos/dpu/displayport_drv.o
+  CC      drivers/video/fbdev/exynos/dpu/displayport_hdcp13.o
+  CC      drivers/video/fbdev/exynos/dpu/dsim_reg.o
+  CC      drivers/video/fbdev/exynos/dpu/dpp_reg.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-time.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-dvfs.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-dt.o
+  CC      drivers/video/fbdev/exynos/panel/panel.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-clk-gate.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-binary.o
+  CC      drivers/video/fbdev/exynos/dpu/decon_reg.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-interface-wrap.o
+  CC      drivers/video/fbdev/exynos/dpu/decon_core.o
+  CC      drivers/video/fbdev/exynos/dpu/decon_dsi.o
+  CC      drivers/media/platform/exynos/fimc-is2/fimc-is-device-sensor_v2.o
+  CC      drivers/media/platform/exynos/fimc-is2/hardware/fimc-is-hw-control.o
+  CC      drivers/video/fbdev/exynos/panel/panel_bl.o
+  CC      drivers/media/platform/exynos/fimc-is2/interface/fimc-is-interface-ischain.o
+  CC      drivers/media/platform/exynos/fimc-is2/ischain/setup-fimc-is-sensor.o
+  CC      drivers/video/fbdev/exynos/panel/panel_drv.o
+  CC      drivers/video/fbdev/exynos/dpu/decon_displayport.o
+  CC      drivers/video/fbdev/exynos/dpu/decon_wb.o
+  CC      drivers/media/platform/exynos/fimc-is2/ischain/setup-fimc-is-module.o
+  CC      drivers/video/fbdev/exynos/dpu/helper.o
+  CC      drivers/media/platform/exynos/fimc-is2/hardware/fimc-is-hw-3aa.o
+  CC      drivers/video/fbdev/exynos/dpu/win_update.o
+  CC      drivers/media/platform/exynos/fimc-is2/sensor/csi2/fimc-is-hw-csi-v5_0.o
+  CC      drivers/video/fbdev/exynos/panel/s6e3ha6/s6e3ha6.o
+  CC      drivers/media/platform/exynos/fimc-is2/ischain/fimc-is-v5_2_0/fimc-is-hw-pwr.o
+  CC      drivers/media/platform/exynos/fimc-is2/vendor/mcd/fimc-is-vender.o
+  CC      drivers/media/platform/exynos/fimc-is2/interface/fimc-is-interface-library.o
+  CC      drivers/video/fbdev/exynos/dpu/bts.o
+  CC      drivers/video/fbdev/exynos/dpu/event_log.o
+  CC      drivers/media/platform/exynos/fimc-is2/ischain/fimc-is-v5_2_0/fimc-is-hw-chain.o
+  CC      drivers/media/platform/exynos/fimc-is2/hardware/fimc-is-hw-isp.o
+  LD      drivers/media/platform/exynos/fimc-is2/sensor/csi2/built-in.o
+  CC      drivers/media/platform/exynos/fimc-is2/sensor/flite/fimc-is-hw-flite-v4_20_0.o
+  CC      drivers/media/platform/exynos/fimc-is2/hardware/fimc-is-hw-tpu.o
+  CC      drivers/media/platform/exynos/fimc-is2/vendor/mcd/fimc-is-sec-define.o
+  CC      drivers/video/fbdev/exynos/dpu/dsu_update.o
+  LD      drivers/media/platform/exynos/fimc-is2/sensor/flite/built-in.o
+  CC      drivers/media/platform/exynos/fimc-is2/hardware/fimc-is-hw-vra.o
+  CC      drivers/media/platform/exynos/fimc-is2/sensor/module_framework/fimc-is-interface-sensor.o
+  CC      drivers/media/platform/exynos/fimc-is2/ischain/fimc-is-v5_2_0/fimc-is-hw-dvfs.o
+  CC      drivers/media/platform/exynos/fimc-is2/interface/fimc-is-interface-vra.o
+  LD      drivers/video/fbdev/exynos/dpu/dpp.o
+  LD      drivers/video/fbdev/exynos/dpu/dsim.o
+  LD      drivers/video/fbdev/exynos/dpu/displayport.o
+  LD      drivers/video/fbdev/exynos/dpu/decon.o
+  LD      drivers/video/fbdev/exynos/dpu/built-in.o
+  CC      drivers/media/platform/exynos/fimc-is2/sensor/module_framework/fimc-is-interface-actuator.o
+  CC      drivers/media/platform/exynos/fimc-is2/sensor/module_framework/actuator/fimc-is-actuator-ak7371.o
+  CC      drivers/video/fbdev/exynos/panel/tuning.o
+  CC      drivers/media/platform/exynos/fimc-is2/ischain/fimc-is-v5_2_0/fimc-is-subdev-3aa.o
+  CC      drivers/media/platform/exynos/fimc-is2/hardware/fimc-is-hw-dm.o
+  CC      drivers/media/platform/exynos/fimc-is2/interface/fimc-is-interface-ddk.o
+  CC      drivers/media/platform/exynos/fimc-is2/hardware/fimc-is-hw-mcscaler-v2.o
+  CC      drivers/video/fbdev/exynos/panel/mdnie.o
+  CC      drivers/media/platform/exynos/fimc-is2/sensor/module_framework/actuator/fimc-is-actuator-ak7372.o
+  CC      drivers/video/fbdev/exynos/panel/sysfs.o
+  CC      drivers/media/platform/exynos/fimc-is2/sensor/module_framework/fimc-is-control-sensor.o
+  CC      drivers/media/platform/exynos/fimc-is2/ischain/fimc-is-v5_2_0/fimc-is-subdev-3ac.o
+  CC      drivers/media/platform/exynos/fimc-is2/vendor/mcd/fimc-is-sysfs.o
+  LD      drivers/media/platform/exynos/fimc-is2/sensor/module_framework/actuator/built-in.o
+  CC      drivers/media/platform/exynos/fimc-is2/sensor/module_framework/cis/fimc-is-cis.o
+  LD      drivers/media/platform/exynos/fimc-is2/interface/built-in.o
+  CC      drivers/media/platform/exynos/fimc-is2/sensor/module_framework/cis/fimc-is-cis-3h1.o
+  CC      drivers/video/fbdev/exynos/panel/copr.o
+  CC      drivers/media/platform/exynos/fimc-is2/ischain/fimc-is-v5_2_0/fimc-is-subdev-3ap.o
+  CC      drivers/video/fbdev/exynos/panel/active_clock.o
+  CC      drivers/media/platform/exynos/fimc-is2/sensor/module_framework/fimc-is-control-actuator.o
+  CC      drivers/media/platform/exynos/fimc-is2/hardware/api/fimc-is-hw-api-common.o
+  CC      drivers/media/platform/exynos/fimc-is2/hardware/api/fimc-is-hw-api-vra.o
+  CC      drivers/video/fbdev/exynos/panel/dpui.o
+  CC      drivers/media/platform/exynos/fimc-is2/ischain/fimc-is-v5_2_0/fimc-is-subdev-isp.o
+  CC      drivers/media/platform/exynos/fimc-is2/ischain/fimc-is-v5_2_0/fimc-is-subdev-ixc.o
+  CC      drivers/media/platform/exynos/fimc-is2/hardware/api/fimc-is-hw-api-mcscaler-v3_0.o
+  CC      drivers/media/platform/exynos/fimc-is2/sensor/module_framework/fimc-is-device-sensor-peri.o
+  CC      drivers/media/platform/exynos/fimc-is2/sensor/module_framework/cis/fimc-is-cis-2l1.o
+  CC      drivers/media/platform/exynos/fimc-is2/vendor/mcd/fimc-is-device-from.o
+  CC      drivers/media/platform/exynos/fimc-is2/sensor/module_framework/flash/fimc-is-flash-s2mpb02.o
+  LD      drivers/video/fbdev/exynos/panel/built-in.o
+  LD      drivers/video/fbdev/exynos/built-in.o
+  LD      drivers/video/fbdev/built-in.o
+  CC      drivers/media/platform/exynos/fimc-is2/sensor/module_framework/flash/fimc-is-flash-gpio.o
+  CC      drivers/media/platform/exynos/fimc-is2/ischain/fimc-is-v5_2_0/fimc-is-subdev-ixp.o
+  LD      drivers/video/built-in.o
+  CC      drivers/media/platform/exynos/fimc-is2/ischain/fimc-is-v5_2_0/fimc-is-subdev-dis.o
+  CC      drivers/media/platform/exynos/fimc-is2/vendor/mcd/fimc-is-pmic.o
+  CC      drivers/media/platform/exynos/fimc-is2/ischain/fimc-is-v5_2_0/fimc-is-subdev-dxc.o
+  CC      drivers/media/platform/exynos/fimc-is2/ischain/fimc-is-v5_2_0/fimc-is-subdev-mcs.o
+  LD      drivers/media/platform/exynos/fimc-is2/sensor/module_framework/flash/built-in.o
+  CC      drivers/media/platform/exynos/fimc-is2/sensor/module_framework/modules/fimc-is-device-module-base.o
+  CC      drivers/media/platform/exynos/fimc-is2/ischain/fimc-is-v5_2_0/fimc-is-subdev-mcsp.o
+  LD      drivers/media/platform/exynos/fimc-is2/sensor/module_framework/built-in.o
+  LD      drivers/media/platform/exynos/fimc-is2/fimc-is.o
+  CC      drivers/media/platform/exynos/fimc-is2/vendor/mcd/fimc-is-companion_c3.o
+  CC      drivers/media/platform/exynos/fimc-is2/sensor/module_framework/cis/fimc-is-cis-2l2.o
+  CC      drivers/media/platform/exynos/fimc-is2/vendor/mcd/fimc-is-device-ois_common.o
+  CC      drivers/media/platform/exynos/fimc-is2/ischain/fimc-is-v5_2_0/fimc-is-subdev-vra.o
+  CC      drivers/media/platform/exynos/fimc-is2/ischain/fimc-is-v5_2_0/fimc-is-subdev-sensor.o
+  CC      drivers/media/platform/exynos/fimc-is2/sensor/module_framework/modules/fimc-is-device-module-3h1.o
+  CC      drivers/media/platform/exynos/fimc-is2/ischain/fimc-is-v5_2_0/fimc-is-subdev-sensor_bns.o
+  LD      drivers/media/platform/exynos/fimc-is2/hardware/api/built-in.o
+  LD      drivers/media/platform/exynos/fimc-is2/hardware/built-in.o
+  CC      drivers/media/platform/exynos/fimc-is2/ischain/fimc-is-v5_2_0/fimc-is-subdev-sensor_vc0.o
+  CC      drivers/media/platform/exynos/fimc-is2/ischain/fimc-is-v5_2_0/fimc-is-subdev-sensor_vc1.o
+  CC      drivers/media/platform/exynos/fimc-is2/vendor/mcd/fimc-is-device-af.o
+  CC      drivers/media/platform/exynos/fimc-is2/ischain/fimc-is-v5_2_0/fimc-is-subdev-sensor_vc2.o
+  CC      drivers/media/platform/exynos/fimc-is2/sensor/module_framework/cis/fimc-is-cis-imx320.o
+  CC      drivers/media/platform/exynos/fimc-is2/ischain/fimc-is-v5_2_0/fimc-is-subdev-sensor_vc3.o
+  CC      drivers/media/platform/exynos/fimc-is2/vendor/mcd/fimc-is-device-eeprom.o
+  CC      drivers/media/platform/exynos/fimc-is2/vendor/mcd/fimc-is-device-ois_s4.o
+  CC      drivers/media/platform/exynos/fimc-is2/sensor/module_framework/modules/fimc-is-device-module-3h1-c3.o
+  CC      drivers/media/platform/exynos/fimc-is2/vendor/mcd/preprocessor/fimc-is-interface-preprocessor.o
+  CC      drivers/media/platform/exynos/fimc-is2/vendor/mcd/preprocessor/fimc-is-module-preprocessor.o
+  CC      drivers/media/platform/exynos/fimc-is2/sensor/module_framework/cis/fimc-is-cis-imx333.o
+  LD      drivers/media/platform/exynos/fimc-is2/ischain/fimc-is-v5_2_0/built-in.o
+  LD      drivers/media/platform/exynos/fimc-is2/ischain/built-in.o
+  CC      drivers/media/platform/exynos/fimc-is2/vendor/mcd/preprocessor/fimc-is-preprocessor-c3.o
+  CC      drivers/media/platform/exynos/fimc-is2/sensor/module_framework/modules/fimc-is-device-module-2l1.o
+  CC      drivers/media/platform/exynos/fimc-is2/sensor/module_framework/modules/fimc-is-device-module-2l2.o
+  CC      drivers/media/platform/exynos/fimc-is2/sensor/module_framework/modules/fimc-is-device-module-imx320.o
+  CC      drivers/media/platform/exynos/fimc-is2/sensor/module_framework/modules/fimc-is-device-module-imx320-c3.o
+  CC      drivers/media/platform/exynos/fimc-is2/sensor/module_framework/modules/fimc-is-device-module-imx333.o
+  CC      drivers/media/platform/exynos/fimc-is2/sensor/module_framework/modules/fimc-is-device-module-5e6.o
+  LD      drivers/media/platform/exynos/fimc-is2/sensor/module_framework/cis/built-in.o
+  LD      drivers/media/platform/exynos/fimc-is2/vendor/mcd/preprocessor/built-in.o
+  LD      drivers/media/platform/exynos/fimc-is2/vendor/mcd/built-in.o
+  LD      drivers/media/platform/exynos/fimc-is2/vendor/built-in.o
+  LD      drivers/media/platform/exynos/fimc-is2/sensor/module_framework/modules/built-in.o
+  LD      drivers/media/platform/exynos/fimc-is2/sensor/built-in.o
+  LD      drivers/media/platform/exynos/fimc-is2/built-in.o
+  LD      drivers/media/platform/exynos/built-in.o
+  LD      drivers/media/platform/built-in.o
+  LD      drivers/media/built-in.o
+  LD      drivers/built-in.o
+  LINK    vmlinux
+  LD      vmlinux.o
+  MODPOST vmlinux.o
+  GEN     .version
+  CHK     include/generated/compile.h
+  UPD     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  KSYM    .tmp_kallsyms1.o
+  KSYM    .tmp_kallsyms2.o
+  LD      vmlinux
+  SORTEX  vmlinux
+  SYSMAP  System.map
+  FIPS with KALSR : Generating hmac of crypto and fmp, then update vmlinux... 
+>>>>> Time used for generated all hashes is 5 sec
+  OBJCOPY arch/arm64/boot/Image
+  GZIP    arch/arm64/boot/Image.gz
+Processing dts files...
+=> Processing: exynos8895-dreamlte_eur_open_00.dts
+=> Generating: exynos8895-dreamlte_eur_open_00.dtb
+=> Processing: exynos8895-dreamlte_eur_open_01.dts
+=> Generating: exynos8895-dreamlte_eur_open_01.dtb
+=> Processing: exynos8895-dreamlte_eur_open_02.dts
+=> Generating: exynos8895-dreamlte_eur_open_02.dtb
+=> Processing: exynos8895-dreamlte_eur_open_03.dts
+=> Generating: exynos8895-dreamlte_eur_open_03.dtb
+=> Processing: exynos8895-dreamlte_eur_open_04.dts
+=> Generating: exynos8895-dreamlte_eur_open_04.dtb
+=> Processing: exynos8895-dreamlte_eur_open_05.dts
+=> Generating: exynos8895-dreamlte_eur_open_05.dtb
+=> Processing: exynos8895-dreamlte_eur_open_07.dts
+=> Generating: exynos8895-dreamlte_eur_open_07.dtb
+=> Processing: exynos8895-dreamlte_eur_open_08.dts
+=> Generating: exynos8895-dreamlte_eur_open_08.dtb
+=> Processing: exynos8895-dreamlte_eur_open_09.dts
+=> Generating: exynos8895-dreamlte_eur_open_09.dtb
+=> Processing: exynos8895-dreamlte_eur_open_10.dts
+=> Generating: exynos8895-dreamlte_eur_open_10.dtb
+Generating dtb.img...
+=> Found compatible entry: samsung, DREAMLTE-BRINGUP EUR rev00
+    (chip: 8895, hw_rev: 0, hw_rev_end: 0)
+=> Found compatible entry: samsung, DREAMLTE EUR rev00 (INFINITY rev0.4)
+    (chip: 8895, hw_rev: 1, hw_rev_end: 1)
+=> Found compatible entry: samsung, DREAMLTE EUR rev00 (INFINITY rev0.5)
+    (chip: 8895, hw_rev: 2, hw_rev_end: 2)
+=> Found compatible entry: samsung, DREAMLTE EUR rev00
+    (chip: 8895, hw_rev: 3, hw_rev_end: 3)
+=> Found compatible entry: samsung, DREAMLTE EUR rev00A
+    (chip: 8895, hw_rev: 4, hw_rev_end: 4)
+=> Found compatible entry: samsung, DREAMLTE EUR rev01
+    (chip: 8895, hw_rev: 5, hw_rev_end: 6)
+=> Found compatible entry: samsung, DREAMLTE EUR rev02
+    (chip: 8895, hw_rev: 7, hw_rev_end: 7)
+=> Found compatible entry: samsung, DREAMLTE EUR rev03
+    (chip: 8895, hw_rev: 8, hw_rev_end: 8)
+=> Found compatible entry: samsung, DREAMLTE EUR rev04/rev05
+    (chip: 8895, hw_rev: 9, hw_rev_end: 9)
+=> Found compatible entry: samsung, DREAMLTE EUR rev06
+    (chip: 8895, hw_rev: 10, hw_rev_end: 255)
+Done.
+
+=================================
+END   : FUNC_BUILD_KERNEL
+=================================
+
+./build.sh: line 176: ./repackimg.sh: Permission denied
+ 
+Creating flashable zip...
+ 
+  adding: magisk/ (stored 0%)
+  adding: magisk/ma/ (stored 0%)
+  adding: magisk/ma/Magisk.zip (deflated 0%)
+  adding: META-INF/ (stored 0%)
+  adding: META-INF/com/ (stored 0%)
+  adding: META-INF/com/google/ (stored 0%)
+  adding: META-INF/com/google/android/ (stored 0%)
+  adding: META-INF/com/google/android/update-binary (deflated 38%)
+  adding: META-INF/com/google/android/aroma-config (deflated 67%)
+  adding: META-INF/com/google/android/aroma/ (stored 0%)
+  adding: META-INF/com/google/android/aroma/read_me.txt (deflated 24%)
+  adding: META-INF/com/google/android/aroma/fonts/ (stored 0%)
+  adding: META-INF/com/google/android/aroma/fonts/big.png (deflated 0%)
+  adding: META-INF/com/google/android/aroma/fonts/small.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/notochangelog.txt (deflated 59%)
+  adding: META-INF/com/google/android/aroma/gnu.txt (deflated 29%)
+  adding: META-INF/com/google/android/aroma/ttf/ (stored 0%)
+  adding: META-INF/com/google/android/aroma/ttf/DroidSansArabic.ttf (deflated 45%)
+  adding: META-INF/com/google/android/aroma/ttf/DroidSansFallback.ttf (deflated 52%)
+  adding: META-INF/com/google/android/aroma/ttf/DroidSans.ttf (deflated 46%)
+  adding: META-INF/com/google/android/aroma/ttf/Roboto-Regular.ttf (deflated 39%)
+  adding: META-INF/com/google/android/aroma/icons/ (stored 0%)
+  adding: META-INF/com/google/android/aroma/icons/license.png (deflated 0%)
+  adding: META-INF/com/google/android/aroma/icons/info.png (deflated 0%)
+  adding: META-INF/com/google/android/aroma/icons/default.png (deflated 12%)
+  adding: META-INF/com/google/android/aroma/icons/apps.png (deflated 16%)
+  adding: META-INF/com/google/android/aroma/icons/apm.png (deflated 0%)
+  adding: META-INF/com/google/android/aroma/icons/verizon.png (deflated 0%)
+  adding: META-INF/com/google/android/aroma/icons/blue.png (deflated 0%)
+  adding: META-INF/com/google/android/aroma/icons/sprint.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/icons/sysmod.png (deflated 1%)
+  adding: META-INF/com/google/android/aroma/icons/cancel.png (deflated 0%)
+  adding: META-INF/com/google/android/aroma/icons/install.png (deflated 0%)
+  adding: META-INF/com/google/android/aroma/icons/power.png (deflated 0%)
+  adding: META-INF/com/google/android/aroma/icons/finish.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/icons/installbutton.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/icons/device.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/icons/sim.png (deflated 1%)
+  adding: META-INF/com/google/android/aroma/icons/back.png (deflated 1%)
+  adding: META-INF/com/google/android/aroma/icons/lux.png (deflated 1%)
+  adding: META-INF/com/google/android/aroma/icons/personalize.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/icons/update.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/icons/next.png (deflated 3%)
+  adding: META-INF/com/google/android/aroma/icons/alert.png (deflated 0%)
+  adding: META-INF/com/google/android/aroma/icons/menu.png (deflated 4%)
+  adding: META-INF/com/google/android/aroma/icons/music.png (deflated 2%)
+  adding: META-INF/com/google/android/aroma/icons/sound.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/icons/welcome.png (deflated 1%)
+  adding: META-INF/com/google/android/aroma/icons/keyb.png (deflated 0%)
+  adding: META-INF/com/google/android/aroma/icons/nova.png (deflated 0%)
+  adding: META-INF/com/google/android/aroma/icons/playstore.png (deflated 0%)
+  adding: META-INF/com/google/android/aroma/icons/wipe.png (deflated 0%)
+  adding: META-INF/com/google/android/aroma/icons/clock.png (deflated 2%)
+  adding: META-INF/com/google/android/aroma/icons/confirm.png (deflated 0%)
+  adding: META-INF/com/google/android/aroma/icons/google.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/icons/agreement.png (deflated 0%)
+  adding: META-INF/com/google/android/aroma/icons/mail.png (deflated 1%)
+  adding: META-INF/com/google/android/aroma/icons/customize.png (deflated 1%)
+  adding: META-INF/com/google/android/aroma/themes/ (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/ (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/font.roboto.big.png (deflated 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/icon.customize.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/radio_on.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/cb_focus.png (deflated 1%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/cb.png (deflated 1%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/icon.back.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/font.roboto.small.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/icon.recovery.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/cb_press.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/cb_on_press.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/radio_on_press.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/icon.personalize.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/icon.exit.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/icon.install.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/bg.png (deflated 92%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/icon.apps.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/icon.default.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/icon.alert.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/button_press.9.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/list.9.png (deflated 5%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/icon.menu.png (deflated 6%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/icon.welcome.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/button.9.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/titlebar.9.png (deflated 9%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/button_focus.9.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/icon.license.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/dialog_titlebar.9.png (deflated 7%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/icon.agreement.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/radio_on_focus.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/radio_focus.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/dialog.9.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/cb_on_focus.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/cb_on.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/icon.info.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/radio_press.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/icon.update.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/icon.next.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/icon.installbutton.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/radio.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/icon.reboot.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/icon.confirm.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/theme.prop (deflated 71%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/navbar.png (deflated 13%)
+  adding: META-INF/com/google/android/aroma/themes/touchwiz/icon.modem.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/miui/ (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/miui/font.roboto.big.png (deflated 0%)
+  adding: META-INF/com/google/android/aroma/themes/miui/icon.customize.png (deflated 19%)
+  adding: META-INF/com/google/android/aroma/themes/miui/radio_on.png (deflated 0%)
+  adding: META-INF/com/google/android/aroma/themes/miui/cb.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/miui/icon.back.png (deflated 1%)
+  adding: META-INF/com/google/android/aroma/themes/miui/cb_sel.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/miui/font.roboto.small.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/miui/select_push.9.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/miui/icon.personalize.png (deflated 17%)
+  adding: META-INF/com/google/android/aroma/themes/miui/icon.install.png (deflated 15%)
+  adding: META-INF/com/google/android/aroma/themes/miui/select.9.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/miui/icon.apps.png (deflated 22%)
+  adding: META-INF/com/google/android/aroma/themes/miui/icon.default.png (deflated 16%)
+  adding: META-INF/com/google/android/aroma/themes/miui/radio_sel.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/miui/cb_on_sel.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/miui/icon.alert.png (deflated 21%)
+  adding: META-INF/com/google/android/aroma/themes/miui/button_press.9.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/miui/icon.menu.png (deflated 4%)
+  adding: META-INF/com/google/android/aroma/themes/miui/icon.welcome.png (deflated 10%)
+  adding: META-INF/com/google/android/aroma/themes/miui/button.9.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/miui/titlebar.9.png (deflated 1%)
+  adding: META-INF/com/google/android/aroma/themes/miui/button_focus.9.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/miui/icon.license.png (deflated 18%)
+  adding: META-INF/com/google/android/aroma/themes/miui/dialog_titlebar.9.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/miui/icon.agreement.png (deflated 18%)
+  adding: META-INF/com/google/android/aroma/themes/miui/dialog.9.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/miui/cb_on.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/miui/icon.info.png (deflated 17%)
+  adding: META-INF/com/google/android/aroma/themes/miui/icon.update.png (deflated 14%)
+  adding: META-INF/com/google/android/aroma/themes/miui/icon.next.png (deflated 3%)
+  adding: META-INF/com/google/android/aroma/themes/miui/radio_on_sel.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/miui/radio.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/miui/nav.9.png (deflated 7%)
+  adding: META-INF/com/google/android/aroma/themes/miui/icon.confirm.png (deflated 17%)
+  adding: META-INF/com/google/android/aroma/themes/miui/theme.prop (deflated 72%)
+  adding: META-INF/com/google/android/aroma/themes/sense/ (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/sense/radio_on.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/sense/cb.png (deflated 13%)
+  adding: META-INF/com/google/android/aroma/themes/sense/cb_sel.png (deflated 4%)
+  adding: META-INF/com/google/android/aroma/themes/sense/bg.9.png (deflated 1%)
+  adding: META-INF/com/google/android/aroma/themes/sense/select_push.9.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/sense/select.9.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/sense/radio_sel.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/sense/cb_on_sel.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/sense/button_press.9.png (deflated 0%)
+  adding: META-INF/com/google/android/aroma/themes/sense/button.9.png (deflated 1%)
+  adding: META-INF/com/google/android/aroma/themes/sense/titlebar.9.png (deflated 0%)
+  adding: META-INF/com/google/android/aroma/themes/sense/button_focus.9.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/sense/dialog_titlebar.9.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/sense/dialog.9.png (deflated 3%)
+  adding: META-INF/com/google/android/aroma/themes/sense/cb_on.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/sense/radio_on_sel.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/sense/radio.png (deflated 0%)
+  adding: META-INF/com/google/android/aroma/themes/sense/nav.9.png (deflated 1%)
+  adding: META-INF/com/google/android/aroma/themes/sense/theme.prop (deflated 68%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/ (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/font.roboto.big.png (deflated 0%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/icon.customize.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/radio_on.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/cb_focus.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/cb.png (deflated 10%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/icon.back.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/navbar.9.png (deflated 17%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/font.roboto.small.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/cb_press.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/cb_on_press.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/radio_on_press.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/icon.personalize.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/icon.exit.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/icon.install.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/bg.png (deflated 63%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/icon.apps.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/icon.default.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/icon.alert.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/button_press.9.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/list.9.png (deflated 3%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/icon.menu.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/icon.welcome.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/button.9.png (deflated 1%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/titlebar.9.png (deflated 15%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/button_focus.9.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/icon.license.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/dialog_titlebar.9.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/icon.agreement.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/radio_on_focus.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/radio_focus.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/dialog.9.png (deflated 0%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/cb_on_focus.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/cb_on.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/icon.info.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/radio_press.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/icon.update.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/icon.next.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/radio.png (deflated 3%)
+  adding: META-INF/com/google/android/aroma/themes/franzyroy/theme.prop (deflated 70%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/ (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/font.roboto.big.png (deflated 0%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/icon.customize.png (deflated 19%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/radio_on.png (deflated 10%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/cb_focus.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/cb.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/icon.back.png (deflated 1%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/font.roboto.small.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/cb_press.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/cb_on_press.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/radio_on_press.png (deflated 10%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/icon.personalize.png (deflated 17%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/icon.install.png (deflated 15%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/bg.png (deflated 64%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/icon.apps.png (deflated 22%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/icon.default.png (deflated 16%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/icon.alert.png (deflated 21%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/button_press.9.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/list.9.png (deflated 5%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/icon.menu.png (deflated 4%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/icon.welcome.png (deflated 10%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/button.9.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/titlebar.9.png (deflated 22%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/button_focus.9.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/icon.license.png (deflated 18%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/dialog_titlebar.9.png (deflated 29%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/icon.agreement.png (deflated 18%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/radio_on_focus.png (deflated 9%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/radio_focus.png (deflated 9%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/dialog.9.png (deflated 1%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/cb_on_focus.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/cb_on.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/icon.info.png (deflated 17%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/radio_press.png (deflated 10%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/icon.update.png (deflated 14%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/icon.next.png (deflated 3%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/radio.png (deflated 9%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/icon.confirm.png (deflated 17%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/theme.prop (deflated 72%)
+  adding: META-INF/com/google/android/aroma/themes/miui4/navbar.png (deflated 23%)
+  adding: META-INF/com/google/android/aroma/themes/ics/ (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/ics/font.roboto.big.png (deflated 0%)
+  adding: META-INF/com/google/android/aroma/themes/ics/icon.customize.png (deflated 7%)
+  adding: META-INF/com/google/android/aroma/themes/ics/radio_on.png (deflated 6%)
+  adding: META-INF/com/google/android/aroma/themes/ics/cb_focus.png (deflated 21%)
+  adding: META-INF/com/google/android/aroma/themes/ics/cb.png (deflated 10%)
+  adding: META-INF/com/google/android/aroma/themes/ics/icon.back.png (deflated 2%)
+  adding: META-INF/com/google/android/aroma/themes/ics/navbar.9.png (deflated 17%)
+  adding: META-INF/com/google/android/aroma/themes/ics/font.roboto.small.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/ics/cb_press.png (deflated 12%)
+  adding: META-INF/com/google/android/aroma/themes/ics/cb_on_press.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/ics/radio_on_press.png (deflated 0%)
+  adding: META-INF/com/google/android/aroma/themes/ics/icon.personalize.png (deflated 9%)
+  adding: META-INF/com/google/android/aroma/themes/ics/icon.install.png (deflated 9%)
+  adding: META-INF/com/google/android/aroma/themes/ics/bg.png (deflated 62%)
+  adding: META-INF/com/google/android/aroma/themes/ics/icon.apps.png (deflated 4%)
+  adding: META-INF/com/google/android/aroma/themes/ics/icon.default.png (deflated 12%)
+  adding: META-INF/com/google/android/aroma/themes/ics/icon.alert.png (deflated 9%)
+  adding: META-INF/com/google/android/aroma/themes/ics/button_press.9.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/ics/list.9.png (deflated 6%)
+  adding: META-INF/com/google/android/aroma/themes/ics/icon.menu.png (deflated 5%)
+  adding: META-INF/com/google/android/aroma/themes/ics/icon.welcome.png (deflated 10%)
+  adding: META-INF/com/google/android/aroma/themes/ics/button.9.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/ics/titlebar.9.png (deflated 15%)
+  adding: META-INF/com/google/android/aroma/themes/ics/button_focus.9.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/ics/icon.license.png (deflated 8%)
+  adding: META-INF/com/google/android/aroma/themes/ics/dialog_titlebar.9.png (deflated 19%)
+  adding: META-INF/com/google/android/aroma/themes/ics/icon.agreement.png (deflated 9%)
+  adding: META-INF/com/google/android/aroma/themes/ics/radio_on_focus.png (deflated 0%)
+  adding: META-INF/com/google/android/aroma/themes/ics/radio_focus.png (deflated 26%)
+  adding: META-INF/com/google/android/aroma/themes/ics/dialog.9.png (deflated 1%)
+  adding: META-INF/com/google/android/aroma/themes/ics/cb_on_focus.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/ics/cb_on.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/ics/icon.info.png (deflated 5%)
+  adding: META-INF/com/google/android/aroma/themes/ics/radio_press.png (stored 0%)
+  adding: META-INF/com/google/android/aroma/themes/ics/icon.update.png (deflated 9%)
+  adding: META-INF/com/google/android/aroma/themes/ics/icon.next.png (deflated 1%)
+  adding: META-INF/com/google/android/aroma/themes/ics/radio.png (deflated 6%)
+  adding: META-INF/com/google/android/aroma/themes/ics/icon.confirm.png (deflated 9%)
+  adding: META-INF/com/google/android/aroma/themes/ics/theme.prop (deflated 71%)
+  adding: META-INF/com/google/android/aroma/farovitus.png (deflated 6%)
+  adding: META-INF/com/google/android/aroma/scripts/ (stored 0%)
+  adding: META-INF/com/google/android/aroma/scripts/save.sh (deflated 39%)
+  adding: META-INF/com/google/android/aroma/scripts/restore.sh (deflated 34%)
+  adding: META-INF/com/google/android/update-binary-installer (deflated 36%)
+  adding: META-INF/com/google/android/updater-script (deflated 76%)
+  adding: kernel/ (stored 0%)
+  adding: kernel/dream2lte-eur.img (stored 0%)
+  adding: kernel/clean.sh (deflated 57%)
+  adding: kernel/dreamlte-eur.img (stored 0%)
+  adding: kernel/busybox (deflated 40%)
+  adding: kernel/NOTO.zip (deflated 1%)
+  adding: su/ (stored 0%)
+  adding: su/SuperSU/ (stored 0%)
+  adding: su/SuperSU/SR1-SuperSU-v2.82-SR1-20170608224931.zip (deflated 0%)
+  adding: su/busybox/ (stored 0%)
+  adding: su/busybox/Busybox.v1.26.2.zip (deflated 0%)
+ 
+Total compile time was 56 seconds

@@ -1,6 +1,10 @@
 VERSION = 4
 PATCHLEVEL = 4
+<<<<<<< HEAD
 SUBLEVEL = 13
+=======
+SUBLEVEL = 69
+>>>>>>> 7d7269a... Merge commit 'Linux-4.4.69' into TW70-stock
 EXTRAVERSION =
 NAME = Blurry Fish Butt
 
