@@ -3,6 +3,7 @@ PATCHLEVEL = 4
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 SUBLEVEL = 13
 =======
 SUBLEVEL = 69
@@ -13,6 +14,9 @@ SUBLEVEL = 70
 =======
 SUBLEVEL = 71
 >>>>>>> 65a45f6... Merge commit 'Linux-4.4.71' into TW70-stock
+=======
+SUBLEVEL = 72
+>>>>>>> ea4495b... Linux-4.4.72 update
 EXTRAVERSION =
 NAME = Blurry Fish Butt
 

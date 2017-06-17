@@ -1,6 +1,10 @@
 #
 # Automatically generated file; DO NOT EDIT.
+<<<<<<< HEAD
 # Linux/arm64 4.4.13 Kernel Configuration
+=======
+# Linux/arm64 4.4.72 Kernel Configuration
+>>>>>>> ea4495b... Linux-4.4.72 update
 #
 CONFIG_ARM64=y
 CONFIG_64BIT=y
