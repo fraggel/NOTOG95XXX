@@ -1,22 +1,6 @@
 VERSION = 4
 PATCHLEVEL = 4
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-SUBLEVEL = 13
-=======
-SUBLEVEL = 69
->>>>>>> 7d7269a... Merge commit 'Linux-4.4.69' into TW70-stock
-=======
-SUBLEVEL = 70
->>>>>>> 35f10db... Merge commit 'Linux-4.4.70' into TW70-stock
-=======
-SUBLEVEL = 71
->>>>>>> 65a45f6... Merge commit 'Linux-4.4.71' into TW70-stock
-=======
-SUBLEVEL = 72
->>>>>>> ea4495b... Linux-4.4.72 update
+SUBLEVEL = 73
 EXTRAVERSION =
 NAME = Blurry Fish Butt
 
@@ -822,7 +806,7 @@ KBUILD_CFLAGS   += $(call cc-option,-Werror=date-time)
 KBUILD_ARFLAGS := $(call ar-option,D)
 
 # check for 'asm goto'
-ifeq ($(shell $(CONFIG_SHELL) $(srctree)/scripts/gcc-goto.sh $(CC)), y)
+ifeq ($(shell $(CONFIG_SHELL) $(srctree)/scripts/gcc-goto.sh $(CC) $(KBUILD_CFLAGS)), y)
 	KBUILD_CFLAGS += -DCC_HAVE_ASM_GOTO
 	KBUILD_AFLAGS += -DCC_HAVE_ASM_GOTO
 endif
